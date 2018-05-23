@@ -1,0 +1,13 @@
+The LaTeX class `aeslac', version 1.0, distributed in
+March 8, 2011, contains the following ten files:
+
+readme.txt      --  A ``Read Me'' file
+manifest.txt    --  The file you are reading
+aeslac.cls      --  LaTeX2e class file
+aeslac.cfg      --  aeslac class configuration file
+aeslogo.pdf     --  AES logo (PDF)
+aeslogo.eps     --  AES logo (EPS)
+template.tex    --  A template file
+bib.bib         --  Bibtex file used in template.tex
+aes.bst         --  AES bibliography style file
+template.pdf    --  Compiled template with ``pdflatex''
