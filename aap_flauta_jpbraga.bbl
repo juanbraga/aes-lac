@@ -1,0 +1,63 @@
+\begin{thebibliography}{10}
+
+\bibitem{orio2003score}
+Nicola Orio, Serge Lemouton, and Diemo Schwarz,
+\newblock ``Score following: State of the art and new developments,''
+\newblock in {\em Proceedings of the 2003 conference on New interfaces for
+  musical expression}. National University of Singapore, 2003, pp. 36--41.
+
+\bibitem{dannenberg2006music}
+Roger~B Dannenberg and Christopher Raphael,
+\newblock ``Music score alignment and computer accompaniment,''
+\newblock {\em Communications of the ACM}, vol. 49, no. 8, pp. 38--43, 2006.
+
+\bibitem{vercoe1984synthetic}
+Barry Vercoe,
+\newblock ``The synthetic performer in the context of live performance,''
+\newblock in {\em Proc. ICMC}, 1984, pp. 199--200.
+
+\bibitem{dannenberg1984line}
+Roger~B Dannenberg,
+\newblock ``An on-line algorithm for real-time accompaniment,''
+\newblock in {\em ICMC}, 1984, vol.~84, pp. 193--198.
+
+\bibitem{puckette1990explode}
+Miller Puckette,
+\newblock ``Explode: a user interface for sequencing and score following.,''
+\newblock in {\em ICMC}, 1990.
+
+\bibitem{orio2001alignment}
+Nicola Orio and Diemo Schwarz,
+\newblock ``Alignment of monophonic and polyphonic music to a score,''
+\newblock in {\em International Computer Music Conference (ICMC)}, 2001, pp.
+  1--1.
+
+\bibitem{dixon2005live}
+Simon Dixon,
+\newblock ``Live tracking of musical performances using on-line time warping,''
+\newblock in {\em Proceedings of the 8th International Conference on Digital
+  Audio Effects}. Citeseer, 2005, pp. 92--97.
+
+\bibitem{gagnon2007high}
+Bruno Gagnon, Roch Lefebvre, and Charles-Antoine Brunet,
+\newblock ``A high level musical score alignment technique based on fuzzy logic
+  and dtw,''
+\newblock in {\em Audio Engineering Society Convention 123}. Audio Engineering
+  Society, 2007.
+
+\bibitem{carabias2015audio}
+Julio~Jos{\'e} Carabias-Orti, Francisco~J Rodr{\'\i}guez-Serrano, Pedro
+  Vera-Candeas, Nicol{\'a}s Ruiz-Reyes, and Francisco~J Ca{\~n}adas-Quesada,
+\newblock ``An audio to score alignment framework using spectral factorization
+  and dynamic time warping.,''
+\newblock in {\em ISMIR}, 2015, pp. 742--748.
+
+\bibitem{rodriguez2017tempo}
+Francisco~Jose Rodriguez-Serrano, Julio~Jose Carabias-Orti, Pedro Vera-Candeas,
+  and Damian Martinez-Munoz,
+\newblock ``Tempo driven audio-to-score alignment using spectral decomposition
+  and online dynamic time warping,''
+\newblock {\em ACM Transactions on Intelligent Systems and Technology (TIST)},
+  vol. 8, no. 2, pp. 22, 2017.
+
+\end{thebibliography}
