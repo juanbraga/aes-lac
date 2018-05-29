@@ -45,12 +45,12 @@
 \citation{puckette1990explode}
 \citation{rabiner1978considerations}
 \citation{sakoe1978dynamic}
+\citation{sakoe1978dynamic}
 \@writefile{toc}{\contentsline {subsection}{\numberline {0.4}Alcance y desarrollo de la publicacion}{4}{subsection.0.4}}
 \@writefile{toc}{\contentsline {section}{\numberline {1}Alineaci\IeC {\'o}n Audio-Partitura}{4}{section.1}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.1}Dynamic Time Warping}{4}{subsection.1.1}}
 \newlabel{eq:matrizsimilaridad}{{2}{4}{Dynamic Time Warping}{equation.1.2}{}}
-\citation{sakoe1978dynamic}
-\citation{rabiner1993fundamentals}
+\newlabel{eq:matrizcosto}{{3}{4}{Dynamic Time Warping}{equation.1.3}{}}
 \citation{muller2007information}
 \citation{paliwal1982modification}
 \citation{sakoe1978dynamic}
@@ -58,7 +58,6 @@
 \citation{dannenberg2006music}
 \citation{dixon2005live}
 \citation{gagnon2007high}
-\newlabel{eq:matrizcosto}{{3}{5}{Dynamic Time Warping}{equation.1.3}{}}
 \newlabel{eq:dist_coseno_ok}{{4}{5}{Dynamic Time Warping}{equation.1.4}{}}
 \newlabel{eq:dist_euclideana}{{5}{5}{Dynamic Time Warping}{equation.1.5}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.2}Restricciones sobre el c\IeC {\'a}mino de m\IeC {\'\i }nimo costo}{5}{subsection.1.2}}
@@ -66,18 +65,28 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.3}Estado del arte}{5}{subsection.1.3}}
 \citation{carabias2015audio}
 \citation{rodriguez2017tempo}
-\citation{orio2003score}
-\citation{orio2001alignment}
+\citation{schorkhuber2010constant}
+\citation{brown1991calculation}
 \@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Resultados de la competencia Mirex en Real-time Audio to Score Alignment.}}{6}{table.1}}
 \newlabel{tab:Mirex}{{1}{6}{Resultados de la competencia Mirex en Real-time Audio to Score Alignment}{table.1}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {2}Metodolog\IeC {\'\i }a}{6}{section.2}}
-\@writefile{toc}{\contentsline {section}{\numberline {3}Experimentos}{6}{section.3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Medidas de desempe\IeC {\~n}o}{6}{subsection.3.1}}
-\newlabel{sec:medidas_desempeno}{{3.1}{6}{Medidas de desempeño}{subsection.3.1}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Ejemplo del resultado de etapa de alineaci\IeC {\'o}n. Se observa la serie temporal representada como comienzo, altura y duraci\IeC {\'o}n de las notas musicales.}}{6}{figure.3}}
-\newlabel{fig:datos_tabla}{{3}{6}{Ejemplo del resultado de etapa de alineación. Se observa la serie temporal representada como comienzo, altura y duración de las notas musicales}{figure.3}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Base de datos de flauta tradicional}{6}{subsection.3.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Resultados}{6}{subsection.3.3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Esquema general de la soluci\IeC {\'o}n del problema de alineaci\IeC {\'o}n entre audio y partitura utilizada en el presente trabajo.}}{6}{figure.3}}
+\newlabel{fig:diagrama_general}{{3}{6}{Esquema general de la solución del problema de alineación entre audio y partitura utilizada en el presente trabajo}{figure.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Extracci\IeC {\'o}n de contenido musical}{6}{subsection.2.1}}
+\newlabel{eq:escalaTI}{{6}{6}{Extracción de contenido musical}{equation.2.6}{}}
+\newlabel{eq:CQT}{{7}{6}{Extracción de contenido musical}{equation.2.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Codificaci\IeC {\'o}n de la partitura}{6}{subsection.2.2}}
+\citation{orio2003score}
+\citation{orio2001alignment}
+\citation{blom1955grove}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Cantidad de arm\IeC {\'o}nicos en la codificaci\IeC {\'o}n. Arriba en alturas absolutas, abajo en clases de altura. De izquierda a derecha los arm\IeC {\'o}nicos elegidos son 0, 2, 4 y 6. Generado con el primer comp\IeC {\'a}s del movimiento Allemande de BWV 1013 de J.S. Bach.}}{7}{figure.4}}
+\newlabel{fig:armonicos_param}{{4}{7}{Cantidad de armónicos en la codificación. Arriba en alturas absolutas, abajo en clases de altura. De izquierda a derecha los armónicos elegidos son 0, 2, 4 y 6. Generado con el primer compás del movimiento Allemande de BWV 1013 de J.S. Bach}{figure.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Experimentos}{7}{section.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Medidas de desempe\IeC {\~n}o}{7}{subsection.3.1}}
+\newlabel{sec:medidas_desempeno}{{3.1}{7}{Medidas de desempeño}{subsection.3.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Ejemplo del resultado de etapa de alineaci\IeC {\'o}n. Se observa la serie temporal representada como comienzo, altura y duraci\IeC {\'o}n de las notas musicales.}}{7}{figure.5}}
+\newlabel{fig:datos_tabla}{{5}{7}{Ejemplo del resultado de etapa de alineación. Se observa la serie temporal representada como comienzo, altura y duración de las notas musicales}{figure.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Base de datos de flauta tradicional}{7}{subsection.3.2}}
 \bibstyle{aes}
 \bibdata{bib}
 \bibcite{orio2003score}{1}
@@ -85,12 +94,17 @@
 \bibcite{vercoe1984synthetic}{3}
 \bibcite{dannenberg1984line}{4}
 \bibcite{puckette1990explode}{5}
-\bibcite{orio2001alignment}{6}
-\bibcite{dixon2005live}{7}
-\bibcite{gagnon2007high}{8}
-\bibcite{carabias2015audio}{9}
-\bibcite{rodriguez2017tempo}{10}
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Arriba, tasa de aciertos en funci\IeC {\'o}n de la tolerancia. Abajo, precisi\IeC {\'o}n en forma de \textit  {boxplot} para el caso $tol=200ms$. Aclaraci\IeC {\'o}n: AA refiere a Alturas Absolutas y CA a Clases de Altura.}}{7}{figure.4}}
-\newlabel{fig:datos_tabla}{{4}{7}{Arriba, tasa de aciertos en función de la tolerancia. Abajo, precisión en forma de \textit {boxplot} para el caso $tol=200ms$. Aclaración: AA refiere a Alturas Absolutas y CA a Clases de Altura}{figure.4}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Tasa de aciertos por obra.}}{7}{table.2}}
-\newlabel{tab:por_obra}{{2}{7}{Tasa de aciertos por obra}{table.2}{}}
+\bibcite{muller2007information}{6}
+\bibcite{orio2001alignment}{7}
+\bibcite{dixon2005live}{8}
+\bibcite{gagnon2007high}{9}
+\bibcite{carabias2015audio}{10}
+\bibcite{rodriguez2017tempo}{11}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Resultados}{8}{subsection.3.3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Arriba, tasa de aciertos en funci\IeC {\'o}n de la tolerancia. Abajo, precisi\IeC {\'o}n en forma de \textit  {boxplot} para el caso $tol=200ms$. Aclaraci\IeC {\'o}n: AA refiere a Alturas Absolutas y CA a Clases de Altura.}}{8}{figure.6}}
+\newlabel{fig:datos_tabla}{{6}{8}{Arriba, tasa de aciertos en función de la tolerancia. Abajo, precisión en forma de \textit {boxplot} para el caso $tol=200ms$. Aclaración: AA refiere a Alturas Absolutas y CA a Clases de Altura}{figure.6}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Tasa de aciertos por obra.}}{8}{table.2}}
+\newlabel{tab:por_obra}{{2}{8}{Tasa de aciertos por obra}{table.2}{}}
+\bibcite{schorkhuber2010constant}{12}
+\bibcite{brown1991calculation}{13}
+\bibcite{blom1955grove}{14}

@@ -26,6 +26,11 @@ Miller Puckette,
 \newblock ``Explode: a user interface for sequencing and score following.,''
 \newblock in {\em ICMC}, 1990.
 
+\bibitem{muller2007information}
+Meinard M{\"u}ller,
+\newblock {\em Information retrieval for music and motion}, vol.~2,
+\newblock Springer, 2007.
+
 \bibitem{orio2001alignment}
 Nicola Orio and Diemo Schwarz,
 \newblock ``Alignment of monophonic and polyphonic music to a score,''
@@ -59,5 +64,22 @@ Francisco~Jose Rodriguez-Serrano, Julio~Jose Carabias-Orti, Pedro Vera-Candeas,
   and online dynamic time warping,''
 \newblock {\em ACM Transactions on Intelligent Systems and Technology (TIST)},
   vol. 8, no. 2, pp. 22, 2017.
+
+\bibitem{schorkhuber2010constant}
+Christian Sch{\"o}rkhuber and Anssi Klapuri,
+\newblock ``Constant-q transform toolbox for music processing,''
+\newblock in {\em 7th Sound and Music Computing Conference, Barcelona, Spain},
+  2010, pp. 3--64.
+
+\bibitem{brown1991calculation}
+Judith~C Brown,
+\newblock ``Calculation of a constant q spectral transform,''
+\newblock {\em The Journal of the Acoustical Society of America}, vol. 89, no.
+  1, pp. 425--434, 1991.
+
+\bibitem{blom1955grove}
+Eric Blom and Denis Stevens,
+\newblock {\em Grove's dictionary of music and musicians},
+\newblock St. Martin's Press, 1955.
 
 \end{thebibliography}

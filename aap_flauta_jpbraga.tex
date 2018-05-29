@@ -103,17 +103,6 @@
 				Rio de Janeiro, RJ, 21941-972, Brasil
 }
 	\Author
-		[obudon@vera.com.uy]
-		{Osvaldo Budón}
-		\Affil
-			[C]% clave (argumento opcional)
-			{%
-				Universidad de la República (UdelaR),
-				Escuela Universitaria de Música (EUMus),
-				Instituo de Ingeniería Eléctrica\\
-				Montevideo, 11200, Uruguay
-}	
-	\Author
 		[pcancela@fing.edu.uy]
 		{Pablo Cancela}
 		\Affilref[A]
@@ -217,7 +206,7 @@ La exploración en la música contemporánea abarca también el control tímbric
 %
 \section{Alineación Audio-Partitura}
 
-La resolución del problema de alineación entre audio y partitura es generalmente dividida en dos etapas. En primer lugar, ambas representaciones de la misma pieza musical (i.e. grabación y notación simbólica) deben ser llevadas a un espacio de características donde puedan ser comparables, usualmente llamado como representación intermedia. Ésta transformación genera a la salida dos series temporales de vectores con la misma dimensión. Para posteriormente definir la correspondencia punto a punto entre la representación del audio y la notación simbólica mediante algún algoritmo de alineación.
+La resolución del problema de alineación entre audio y partitura es generalmente dividida en dos etapas. En primer lugar, ambas representaciones de la misma pieza musical (i.e. grabación y notación simbólica) deben ser llevadas a un espacio de características donde puedan ser comparables, usualmente llamado como representación intermedia. Ésta transformación genera a la salida dos series temporales de vectores con la misma dimensión. De donde se define la correspondencia punto a punto mediante algún algoritmo de alineación y una distancia dada.
 
 
 En 1984 en la conferencia ICMC (\textit{International Computer Music Conference}) aparecen las primeras publicaciones que dieron comienzo a esta linea de investigación. Ambas se basaban en una estrategia de \textit{string matching} para generar la alineación en tiempo real. Dannenberg con la publicación \cite{dannenberg1984line} describía un sistema basado en programación dinámica y una representación simbólica de la música de alto nivel. Para esto la partitura y eventos midi generados por el instrumentista en tiempo real eran comparados y alineados. Por otro lado, Vercoe publicó en \cite{vercoe1984synthetic} su intérprete sintético (\textit{Synthetic Performer} por su denominación en inglés) para acompañamiento de flauta traversa. La estrategia se basaba en representar audio y partitura como una lista de alturas (\textit{pitches} por su denominación en inglés). Como en ese entonces los detectores de pitch no eran ni lo suficientemente rápidos ni robustos para trabajar en tiempo real, la estimación de pitch desde el instrumento se hacía con la colocación de llaves que enviaban señales midi al sistema con la posición de los dedos. Posteriormente, en 1990 se introdujo \textit{EXPLODE} por parte de Puckette \cite{puckette1990explode}. Varias piezas musicales para medios mixtos\footnote{En Echo de Philippe Manoury para soprano y computadora, tal vez es de las más conocidas.} fueron escritas para interpretación basada en este sistema. Si bien la experiencia fue exitosa, los compositores debían sacrificar aspectos musicales para asegurar el correcto funcionamiento del sistema a la hora de dar un concierto. 
@@ -276,7 +265,7 @@ d_{euclideana}(\vec{X},\vec{Y}) = \lVert \vec{X} - \vec{Y} \rVert_{2}
 \subsection{Restricciones sobre el cámino de mínimo costo}
 \label{sec:restricciones}
 
-Las restricciones sobre el camino acotan el universo de posibilidades en la búsqueda del mínimo, disminuyendo el costo computacional en el cálculo de la alineación. La elección correcta de estas restricciones está asociada al conocimiento a priori del problema que se quiera resolver, es así que se pueden aplicar sin atentar contra el resultado final. En lo que sigue se hará mención solamente de las restricciones que fueron aplicadas para los experimentos de la tesis, para más detalle se recomienda el libro clásico de L. Rabiner et al \cite{rabiner1993fundamentals} o el más reciente de M. Muller \cite{muller2007information}.
+Las restricciones sobre el camino acotan el universo de posibilidades en la búsqueda del mínimo, disminuyendo el costo computacional en el cálculo de la alineación. La elección correcta de estas restricciones está asociada al conocimiento a priori del problema que se quiera resolver, es así que se pueden aplicar sin atentar contra el resultado final. En lo que sigue se hará mención solamente de las restricciones que fueron aplicadas para los experimentos de la tesis, para más detalle se recomienda el libro de M. Muller \cite{muller2007information}.
   
 En el caso partícular de alineación entre audio y partitura existe una correspondencia directa entre notación simbólica y las grabaciones de audio. Es claro si se tiene en cuenta que el músico ejecuta la pieza mediante la lectura de la partitura. Ésta característica de las series temporales en el problema planteado, permiten aplicar las restricciones que se especifican a continuación:
 
@@ -284,7 +273,7 @@ En el caso partícular de alineación entre audio y partitura existe una corresp
 \item \textbf{Limites}: Los limites de la alineación deben cumplir la siguiente condición: $p[1] = q [1] = 0$ y $p[L] = M, q[L] = N$. Es razonable suponer que la grabación empieza y termina con la ejecución del cominezo y el final de la partitura.
 \item \textbf{Monotonicidad}: Las secuencias deben cumplir: $p[i+1] \geq p[i]$ y $q[i+1] \geq q[i]$. Teniendo en cuenta que la ejecución de la partitura se hace en una lectura direccionada (i.e. de izquierda a derecha) sin cambios a la dirección contraria parece una restricción acorde. 
 \item \textbf{Continuidad}: Por último se impone: $p[i+1] \leq p[i] + 1$ y $q[i+1] \leq q[i] + 1$.  Suponiendo que el intérprete no realiza ningún salto en la lectura de la partitura durante la ejecución no debería resultar en el descarte de una solución válida. 
-\item \textbf{Ventana de ajuste}: Teniendo en cuenta que las fluctuaciones temporales entre audio y partitura nunca serán excesivas se puede limitar el cómputo de la matriz de costo a una ventaja de ajuste. Existen varias formulaciones en la literatura, en la presente tesis se trabaja con la denominada de Paliwal en honor a su autor \cite{paliwal1982modification}. Matemáticamente se escribe como: $|p[i]\frac{N}{M}-q[i]|<r$, donde el término $r$ es usualmente denominado como radio y define el tamaño de la ventana de ajuste. Notar que la ecuación presenta el factor de escala $\frac{N}{M}$ que permite penalizar de la misma forma ambas dimensiones. 
+\item \textbf{Ventana de ajuste}: Teniendo en cuenta que las fluctuaciones temporales entre audio y partitura nunca serán excesivas se puede limitar el cómputo de la matriz de costo a una ventana de ajuste. Existen varias formulaciones en la literatura, en la presente tesis se trabaja con la denominada de Paliwal en honor a su autor \cite{paliwal1982modification}. Matemáticamente se escribe como: $|p[i]\frac{N}{M}-q[i]|<r$, donde el término $r$ es usualmente denominado como radio y define el tamaño de la ventana de ajuste. Notar que la ecuación presenta el factor de escala $\frac{N}{M}$ que permite penalizar de la misma forma ambas dimensiones. 
 \item \textbf{Pendiente}: Si la pendiente no se limita el mejor cámino puede contener fragmetos puramente horizontales o verticales, permitiendo saltearse fragmentos enteros de la partitura o grabación. Esto puede ser favorable en casos donde el intérprete se saltea una parte de la partitura, o ejecuta un material sonoro que no se encuentra escrito. Por el contrario, puede ser desfavorable en casos donde haya correspondencia directa entre partitura y ejecución. Existen varias estrategias para limitar la pendiente del mejor cámino, los expermientos realizados en la presente tesis utilizan las propuestas en \cite{sakoe1978dynamic}. A continuación se las define matemáticamente: 
 
 %\begin{itemize}
@@ -367,25 +356,56 @@ Un salto cualitativo en los resultados del MIREX (observar tabla \ref{tab:Mirex}
 
 
 \section{Metodología}
-Enventanado
 
-Extracción de contenido musical
-	B3aB8 CQT
-	Normalización
-	12 bins Chroma
+En la Figura \ref{fig:diagrama_general} se observa el diagrama de la metodología de resolución. Por un lado, el bloque de extracción de contenido musical, tiene el objetivo de transformar muestras de audio en representación intermedia. Del otro lado, el bloque de codificación de notación simbólica, lleva la partitura a la misma representación. 
 
-Codificación de la partitura
-	Silencio
-	Armónicos
+Dado que las señales de flauta de la base de datos son ejecutadas con técnicas tradicionales el material sonoro se encuentra organizado en alturas de la escala cromática de 12 tonos (también llamada como la escala de música occidental). Estos sonidos, por su naturaleza se organizan dos formas: por alturas absolutas o por clases de altura. Es por eso que para la extracción de contenido musical se opta respectivamente por la \textit{Constant Q Transform}\cite{schorkhuber2010constant} (CQT) y el \textit{Chromagrama} (computado a partir del cálculo de la CQT).
 
-Síntesis
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=0.5\textwidth]{imagenes/diagrama_general-back} 	
+\caption{Esquema general de la solución del problema de alineación entre audio y partitura utilizada en el presente trabajo.}
+\label{fig:diagrama_general}
+\end{center}
+\end{figure}
 
-Distancia Coseno
+\subsection{Extracción de contenido musical}
+La escala de la música occidental tiene 12 sonidos por octava, donde las frecuencias fundamentales se ditribuyen de forma geométricamente espaciada. Suponiendo afinación éstandar de $440Hz$ matemáticamente se escribe como:
+\begin{equation}
+\label{eq:escalaTI}
+F_k= 440Hz \times 2^{\:k/12} \: \text{con} \: k \: \in \: [-50,40]
+\end{equation}
 
+Como se detalla en la publicación \cite{brown1991calculation} la representación espectral CQT fue diseñada con el propósito de adaptarse a la organización en alturas de los sonidos musicales. Puede ser directamente calculada mediante una evaluación conveniente de la DFT. El \textit{k-ésimo} componente se escribe como: 
+\begin{equation}
+\label{eq:CQT}
+X^{CQT}[k]=\frac{1}{N[k]}\sum_{n=0}^{N[k]-1}w[n,k]x[n]e^{-j2\pi Qn/N[k]}
+\end{equation}
+donde el factor de normalización $1/N[k]$ aparece para compensar la dependencia con $k$ del número de términos en la sumatoria. Para el problema que aquí se quiere resolver, la mínima resolución queda determinada por la cantidad de semitonos en la escala cromática. Es así que como mínimo se trabaja con 12 bins por octava. Por otro lado, para analizar todo el espectro es necesario que $\Delta_{f_k}=f_{k+1}-f_{k}=f_k(2^{\frac{1}{B}}-1)$ por lo que con $B=12$ se cumple que $Q=1/(2^{\frac{1}{12}}-1)\approx 17$. De esta forma queda determinado el tamaño de las ventanas de análisis de la CQT en función de la cantidad de Bins por octava, siendo este parámetro el que define el compromiso tiempo frecuencia de la transformada. 
+ 
+El cálculo de la CQT se hace en el rango de frecuencias: $B3$ a $B8$. Con el criterio de abarcar el registro más amplio posible, teniendo en cuenta por un lado el límite inferior del registro de la flaut, y por otro, que las señales están muestreadas a $44100Hz$. Además, teniendo en cuenta que el Chromagrama se cálcula colapsado la CQT se calcula en octavas completas. Por lo que se obtiene para la CQT un vector de dimensión 72 y para el Chromagrama de 12.
+
+\subsection{Codificación de la partitura}
+
+El bloque de codificación tiene como entrada notación simbólica y a la salida genera una matriz que codifica en el eje vertical las alturas mientras que en el horizontal las duraciones (de forma análoga a la CQT y Chromagrama). La hipotesis central radica en el modelado de la notación exclusivamente bajo los parámetros de altura y duración, dejando de lado las dinámicas, articulaciónes y otros parámetros expresivos. 
+
+La duración en notación musical es expresada de forma relativa a la redonda. Para obtener la duración entonces se debe tener en cuenta el tempo sugerido por el compositor, de esta forma transformar un valor relativo de la redonda a segundos.  
+
+Por otro lado, la posición en el eje vertical queda determinada por la altura musical notada. Para esto se tienen en cuenta dos aspectos independientes, por un lado la forma de representar las alturas musicales (específicamente como alturas absolutas o clases de altura) y por otro lado la cantidad de \textit{bins} (parámetro del sistema) que completan una octava musical. Además, la intensidad es codificada con el valor unidad (se trabaja con valores normalizados). Esta decisión se desprende del hecho que las dinámicas no se tienen en cuenta para la codificación. 
+
+Dos aspectos importantes se tienen encuenta para la codificación de la partitura. Por un lado la representación de los silencios musicales y la cántidad de armónicos en los momentos de notas. El primero se representa como un valor constante $\beta$ en todo el registro. Del otro lado, en función de la naturaleza sonora de la flauta los armónicos. La decisión de los mejores parámetros es determinada en función de los resultados con la base de datos y se verá mas adelante. En la Figura \ref{fig:armonicos_param} se observa la varición en el resultado según la cantidad de armónicos.
+
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=0.48\textwidth]{imagenes/armonicos_param} 	
+\caption{Cantidad de armónicos en la codificación. Arriba en alturas absolutas, abajo en clases de altura. De izquierda a derecha los armónicos elegidos son 0, 2, 4 y 6. Generado con el primer compás del movimiento Allemande de BWV 1013 de J.S. Bach.}
+\label{fig:armonicos_param}
+\end{center}
+\end{figure}
 
 \section{Experimentos}
 
-Este capítulo está dedicado a la evaluación de desempeño de la solución planteada en la base de datos de flauta traversa. Se comienza evaluando la influencia de los parámetros de representación intermedia en el resultado de alineación. Se evalúan además distintas restricciones en el cámino óptimo de alineación de DTW. A continación, se hace una comparación de la estrategia de codificación de notación simbólica propuesta aquí, frente a la síntesis como paso intermedio. Para finalizar se hace una comparación con un algoritmo desarrollado por terceros. Todos los experimentos son realizados en el presente capítulo se realizan con la base de datos construída en el marco de la tesis. 
+La sección esta dividida en tres partes. Se comienza evaluando la influencia de los parámetros de representación intermedia en el resultado de alineación para determinar la mejor combinación. Posteriormente, se evalúan distintas restricciones en el cámino óptimo de alineación de DTW. Luego, se hace una comparación de la estrategia de codificación de notación simbólica propuesta aquí, frente a la síntesis como paso intermedio. Para finalizar se hace una comparación con un algoritmo desarrollado por terceros. Todos los experimentos son realizados en el presente capítulo se realizan con la base de datos construída en el marco de la tesis. 
 
 \subsection{Medidas de desempeño}
 \label{sec:medidas_desempeno}
@@ -404,10 +424,17 @@ A la salida de la etapa de alineación se obtiene una lista como la representada
 
 \subsection{Base de datos de flauta tradicional}
 
+La flauta traversa cuenta con un repertorio vasto de obras musicales asociado a su larga historia,  diversos compositores han compuesto para este instrumento. La base de datos esta compuesta por fragmentos de cuatro piezas musicales ejecutadas con técnicas tradicionales. La elección de las obras determina variaciones sustanciales en los estilos musicales que la componen. Las obras seleccionadas son:
+\begin{itemize}
+\item Allemande, BWV 1013 de J.S. Bach
+\item Syrinx de C. Debussy
+\item Density 21.5 de E. Varese
+\item Sequenza I de L. Berio
+\end{itemize} 
 
-Características
 
-Kaggle
+De las cuatro obras músicales se tomaron grabaciones de distintos intérpretes para lograr variación en aspectos expresivos. De estas grabaciones se generaron fragmentos de forma que la unidad mínima fuere una frase musical\footnote{La frase musical es una de las unidades más pequeñas en una composición musical. Esta asociada a la sensación de completitud (inicio, desarrollo y fin) de una idea musical, similar a la idea de frase en la composición literaria. En el caso particular de la flauta traversa, esta generalmente asociada a la sección de música entre respiración y respiración\cite{blom1955grove}.} y genearon archivos de anotaciones manuales como ground truth. Resultando en un total de 30 fragmentos de audio con un archivo de texto con notación simbólica y con anotaciones manuales. Las notas que aparecen en la base van desde $C4$ a $D7$. En total existen $2245$ eventos, entre notas y silencios. La base se encuentra accesible para su uso con fines académicos en: https://www.kaggle.com/jbraga/traditional-flute-dataset.
+
 
 \subsection{Resultados}
 Comparación
@@ -437,6 +464,8 @@ Density 21.5 & 80\%   \\
 Sequenza I & 70\%   \\
 \end{tabular}
 \end{table}
+
+Si se ordenan de forma cronológica, es notoria la complejización de los recursos musicales utilizados en el procesos compositivos. Este último aspecto plantea un desafío creciente en el propósito de alineación de notación simbólica con audio.  
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
