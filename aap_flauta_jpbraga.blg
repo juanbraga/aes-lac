@@ -3,51 +3,44 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: aap_flauta_jpbraga.aux
 The style file: aes.bst
 Database file #1: bib.bib
-Warning--I didn't find a database entry for "piston1955orchestration"
-Warning--I didn't find a database entry for "samuel2002study"
-Warning--I didn't find a database entry for "dick1975other"
-Warning--I didn't find a database entry for "rabiner1978considerations"
-Warning--I didn't find a database entry for "sakoe1978dynamic"
-Warning--I didn't find a database entry for "paliwal1982modification"
-You've used 14 entries,
+You've used 20 entries,
             1855 wiz_defined-function locations,
-            551 strings with 5999 characters,
-and the built_in function-call counts, 3683 in all, are:
-= -- 345
-> -- 109
+            582 strings with 6901 characters,
+and the built_in function-call counts, 4909 in all, are:
+= -- 461
+> -- 155
 < -- 9
-+ -- 43
-- -- 29
-* -- 236
-:= -- 518
-add.period$ -- 17
-call.type$ -- 14
-change.case$ -- 12
++ -- 61
+- -- 41
+* -- 322
+:= -- 708
+add.period$ -- 23
+call.type$ -- 20
+change.case$ -- 16
 chr.to.int$ -- 0
-cite$ -- 14
-duplicate$ -- 203
-empty$ -- 400
-format.name$ -- 29
-if$ -- 883
+cite$ -- 20
+duplicate$ -- 257
+empty$ -- 528
+format.name$ -- 41
+if$ -- 1161
 int.to.chr$ -- 0
-int.to.str$ -- 14
-missing$ -- 16
-newline$ -- 73
-num.names$ -- 14
-pop$ -- 71
+int.to.str$ -- 20
+missing$ -- 23
+newline$ -- 102
+num.names$ -- 20
+pop$ -- 95
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 106
+skip$ -- 126
 stack$ -- 0
-substring$ -- 229
-swap$ -- 76
+substring$ -- 308
+swap$ -- 86
 text.length$ -- 9
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 40
-width$ -- 16
-write$ -- 157
-(There were 6 warnings)
+while$ -- 55
+width$ -- 22
+write$ -- 219

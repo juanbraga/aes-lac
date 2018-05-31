@@ -16,15 +16,43 @@ Barry Vercoe,
 \newblock ``The synthetic performer in the context of live performance,''
 \newblock in {\em Proc. ICMC}, 1984, pp. 199--200.
 
-\bibitem{dannenberg1984line}
-Roger~B Dannenberg,
-\newblock ``An on-line algorithm for real-time accompaniment,''
-\newblock in {\em ICMC}, 1984, vol.~84, pp. 193--198.
+\bibitem{arzt2008score}
+Andreas Arzt,
+\newblock {\em Score following with dynamic time warping: An automatic
+  page-turner},
+\newblock na, 2008.
 
-\bibitem{puckette1990explode}
-Miller Puckette,
-\newblock ``Explode: a user interface for sequencing and score following.,''
-\newblock in {\em ICMC}, 1990.
+\bibitem{prockup2013orchestral}
+Matthew Prockup, David Grunberg, Alex Hrybyk, and Youngmoo~E Kim,
+\newblock ``Orchestral performance companion: Using real-time audio to score
+  alignment,''
+\newblock {\em IEEE MultiMedia}, vol. 20, no. 2, pp. 52--60, 2013.
+
+\bibitem{montecchio2009discrete}
+Nicola Montecchio and Nicola Orio,
+\newblock ``A discrete filter bank approach to audio to score matching for
+  polyphonic music.,''
+\newblock in {\em ISMIR}, 2009, pp. 495--500.
+
+\bibitem{raphael1999automatic}
+Christopher Raphael,
+\newblock ``Automatic segmentation of acoustic musical signals using hidden
+  markov models,''
+\newblock {\em IEEE transactions on pattern analysis and machine intelligence},
+  vol. 21, no. 4, pp. 360--370, 1999.
+
+\bibitem{orio2001score}
+Nicola Orio and Fran{\c{c}}ois D{\'e}chelle,
+\newblock ``Score following using spectral analysis and hidden markov models,''
+\newblock in {\em ICMC: International Computer Music Conference}, 2001, pp.
+  1--1.
+
+\bibitem{sakoe1978dynamic}
+Hiroaki Sakoe and Seibi Chiba,
+\newblock ``Dynamic programming algorithm optimization for spoken word
+  recognition,''
+\newblock {\em IEEE transactions on acoustics, speech, and signal processing},
+  vol. 26, no. 1, pp. 43--49, 1978.
 
 \bibitem{muller2007information}
 Meinard M{\"u}ller,
@@ -64,6 +92,16 @@ Francisco~Jose Rodriguez-Serrano, Julio~Jose Carabias-Orti, Pedro Vera-Candeas,
   and online dynamic time warping,''
 \newblock {\em ACM Transactions on Intelligent Systems and Technology (TIST)},
   vol. 8, no. 2, pp. 22, 2017.
+
+\bibitem{samuel2002study}
+Adler Samuel,
+\newblock ``The study of orchestration,'' 2002.
+
+\bibitem{dick1975other}
+Robert Dick,
+\newblock {\em The other flute: a performance manual of contemporary
+  techniques},
+\newblock Oxford University Press, 1975.
 
 \bibitem{schorkhuber2010constant}
 Christian Sch{\"o}rkhuber and Anssi Klapuri,
