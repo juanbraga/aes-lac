@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.27)  31 MAY 2018 03:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.27)  4 JUN 2018 00:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -849,56 +849,56 @@ e
 LaTeX Info: Redefining \. on input line 66.
 LaTeX Info: Redefining \% on input line 66.
 
-<aeslogo.pdf, id=80, 66.74937pt x 82.3075pt>
+<aeslogo.pdf, id=76, 66.74937pt x 82.3075pt>
 File: aeslogo.pdf Graphic file (type pdf)
  <use aeslogo.pdf>
-Package pdftex.def Info: aeslogo.pdf used on input line 115.
+Package pdftex.def Info: aeslogo.pdf used on input line 116.
 (pdftex.def)             Requested size: 75.0pt x 92.49019pt.
-LaTeX Font Info:    Try loading font information for U+msa on input line 115.
+LaTeX Font Info:    Try loading font information for U+msa on input line 116.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 115.
+LaTeX Font Info:    Try loading font information for U+msb on input line 116.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 115.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 116.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
 LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 115.
+(Font)              scaled to size 8.99994pt on input line 116.
 LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 17.99988pt on input line 115.
+(Font)              scaled to size 17.99988pt on input line 116.
 LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 32.39978pt on input line 115.
+(Font)              scaled to size 32.39978pt on input line 116.
 LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 10.79993pt on input line 115.
+(Font)              scaled to size 10.79993pt on input line 116.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <18> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 115.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 116.
 LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
-(Font)              scaled to size 16.19989pt on input line 115.
+(Font)              scaled to size 16.19989pt on input line 116.
 LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 7.19995pt on input line 115.
+(Font)              scaled to size 7.19995pt on input line 116.
 LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 6.29996pt on input line 115.
+(Font)              scaled to size 6.29996pt on input line 116.
 
-Underfull \hbox (badness 10000) in paragraph at lines 115--115
+Underfull \hbox (badness 10000) in paragraph at lines 116--116
 [] $[]$
  []
 
 LaTeX Font Info:    Font shape `OT1/phv/b/sc' will be
-(Font)              scaled to size 10.79993pt on input line 115.
+(Font)              scaled to size 10.79993pt on input line 116.
 LaTeX Font Info:    Font shape `OT1/phv/m/sc' will be
-(Font)              scaled to size 10.79993pt on input line 118.
+(Font)              scaled to size 10.79993pt on input line 119.
 LaTeX Font Info:    Font shape `OT1/phv/bx/sc' in size <12> not available
-(Font)              Font shape `OT1/phv/b/sc' tried instead on input line 118.
+(Font)              Font shape `OT1/phv/b/sc' tried instead on input line 119.
 LaTeX Font Info:    Font shape `OT1/phv/b/sc' will be
-(Font)              scaled to size 10.79993pt on input line 118.
+(Font)              scaled to size 10.79993pt on input line 119.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -906,61 +906,65 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
  <./aeslogo.pdf>]
-<imagenes/resultado_alineacion.png, id=107, 558.085pt x 321.2pt>
+<imagenes/resultado_alineacion.png, id=104, 558.085pt x 321.2pt>
 File: imagenes/resultado_alineacion.png Graphic file (type png)
 
 <use imagenes/resultado_alineacion.png>
 Package pdftex.def Info: imagenes/resultado_alineacion.png used on input line 1
-27.
+28.
 (pdftex.def)             Requested size: 182.09485pt x 104.80045pt.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <12> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 147.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 148.
 LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
-(Font)              scaled to size 10.79993pt on input line 147.
-LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 8.09995pt on input line 176.
- [2 <./imagenes/resultado_alineacion.png>]
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 204.
+(Font)              scaled to size 10.79993pt on input line 148.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 221.
- [3] <imagenes/registro_flauta.png, id=176, 99.67238pt x 55.22632pt>
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 159.
+LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
+(Font)              scaled to size 8.09995pt on input line 173.
+ [2 <./imagenes/resultado_alineacion.png>] [3]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 231.
+ <imagenes/registro_flauta.png, id=173, 99.67238pt x 55.22632pt>
 File: imagenes/registro_flauta.png Graphic file (type png)
 
 <use imagenes/registro_flauta.png>
-Package pdftex.def Info: imagenes/registro_flauta.png used on input line 270.
+Package pdftex.def Info: imagenes/registro_flauta.png used on input line 257.
 (pdftex.def)             Requested size: 68.28383pt x 37.834pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[4] <imagenes/diagrama_general-back.png, id=199, 811.03pt x 303.534pt>
+ [4 <./imagenes/registro_flauta.png>]
+<imagenes/diagrama_general-back.png, id=199, 811.03pt x 303.534pt>
 File: imagenes/diagrama_general-back.png Graphic file (type png)
 
 <use imagenes/diagrama_general-back.png>
 Package pdftex.def Info: imagenes/diagrama_general-back.png used on input line 
-313.
+303.
 (pdftex.def)             Requested size: 227.62204pt x 85.1881pt.
 
-Overfull \hbox (7.11319pt too wide) in paragraph at lines 313--314
+Overfull \hbox (7.11319pt too wide) in paragraph at lines 303--304
  [] 
  []
 
-[5 <./imagenes/registro_flauta.png> <./imagenes/diagrama_general-back.png>]
-<imagenes/armonicos_param.png, id=213, 951.7959pt x 346.896pt>
+[5 <./imagenes/diagrama_general-back.png>]
+<imagenes/armonicos_param.png, id=217, 951.7959pt x 346.896pt>
 File: imagenes/armonicos_param.png Graphic file (type png)
 
 <use imagenes/armonicos_param.png>
-Package pdftex.def Info: imagenes/armonicos_param.png used on input line 347.
+Package pdftex.def Info: imagenes/armonicos_param.png used on input line 338.
 (pdftex.def)             Requested size: 218.51521pt x 79.64148pt.
- [6 <./imagenes/armonicos_param.png>]
-<imagenes/datos.png, id=231, 293.095pt x 138.116pt>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<imagenes/datos.png, id=222, 293.095pt x 138.116pt>
 File: imagenes/datos.png Graphic file (type png)
  <use imagenes/datos.png>
-Package pdftex.def Info: imagenes/datos.png used on input line 366.
+Package pdftex.def Info: imagenes/datos.png used on input line 358.
 (pdftex.def)             Requested size: 182.09485pt x 85.80804pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 383--384
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[6 <./imagenes/armonicos_param.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 375--376
 \OT1/ptm/m/n/10 en: https://www.kaggle.com/jbraga/traditional-flute-
  []
 
@@ -968,10 +972,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 383--384
 File: imagenes/aciertos_cqt.png Graphic file (type png)
 
 <use imagenes/aciertos_cqt.png>
-Package pdftex.def Info: imagenes/aciertos_cqt.png used on input line 407.
+Package pdftex.def Info: imagenes/aciertos_cqt.png used on input line 399.
 (pdftex.def)             Requested size: 227.62204pt x 116.49011pt.
 
-Overfull \hbox (7.11319pt too wide) in paragraph at lines 407--408
+Overfull \hbox (7.11319pt too wide) in paragraph at lines 399--400
  [] 
  []
 
@@ -979,92 +983,97 @@ Overfull \hbox (7.11319pt too wide) in paragraph at lines 407--408
 File: imagenes/aciertos_chroma.png Graphic file (type png)
 
 <use imagenes/aciertos_chroma.png>
-Package pdftex.def Info: imagenes/aciertos_chroma.png used on input line 415.
+Package pdftex.def Info: imagenes/aciertos_chroma.png used on input line 407.
 (pdftex.def)             Requested size: 227.62204pt x 116.49011pt.
 
-Overfull \hbox (7.11319pt too wide) in paragraph at lines 415--416
+Overfull \hbox (7.11319pt too wide) in paragraph at lines 407--408
  [] 
  []
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[7 <./imagenes/datos.png> <./imagenes/aciertos_cqt.png>]
-<imagenes/comparacion.png, id=251, 951.7959pt x 953.2413pt>
+[7 <./imagenes/datos.png> <./imagenes/aciertos_cqt.png> <./imagenes/aciertos_ch
+roma.png>] <imagenes/comparacion.png, id=254, 951.7959pt x 959.7456pt>
 File: imagenes/comparacion.png Graphic file (type png)
 
 <use imagenes/comparacion.png>
-Package pdftex.def Info: imagenes/comparacion.png used on input line 453.
-(pdftex.def)             Requested size: 227.62204pt x 227.96805pt.
+Package pdftex.def Info: imagenes/comparacion.png used on input line 448.
+(pdftex.def)             Requested size: 227.62204pt x 229.52356pt.
 
-Overfull \hbox (7.11319pt too wide) in paragraph at lines 453--454
+Overfull \hbox (7.11319pt too wide) in paragraph at lines 448--449
  [] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[8 <./imagenes/aciertos_chroma.png> <./imagenes/comparacion.png>]
-(./aap_flauta_jpbraga.bbl
-Underfull \hbox (badness 1715) in paragraph at lines 51--56
-[]\OT1/ptm/m/n/10 Hiroaki Sa-koe and Sei-bi Chi-ba,  ``Dy-na-mic
- []
-
-
-Underfull \hbox (badness 1701) in paragraph at lines 75--80
+(./aap_flauta_jpbraga.bbl [8 <./imagenes/comparacion.png>]
+Underfull \hbox (badness 1701) in paragraph at lines 62--67
 []\OT1/ptm/m/n/10 Bruno Gag-non, Roch Le-feb-vre, and Charles-
  []
 
 
-Underfull \hbox (badness 4341) in paragraph at lines 82--87
+Underfull \hbox (badness 4341) in paragraph at lines 69--74
 \OT1/ptm/m/n/10 Serrano, Pe-dro Vera-Candeas, Ni-col[]as Ruiz-
  []
 
 
-Underfull \hbox (badness 2469) in paragraph at lines 89--95
+Underfull \hbox (badness 2469) in paragraph at lines 76--82
 []\OT1/ptm/m/n/10 Francisco Jo-se Rodriguez-Serrano, Ju-lio Jo-se
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 107--111
+Underfull \hbox (badness 1715) in paragraph at lines 84--88
+[]\OT1/ptm/m/n/10 Hiroaki Sa-koe and Sei-bi Chi-ba,  ``Dy-na-mic
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 105--109
 []\OT1/ptm/m/n/10 Christian Sch[]ork-hu-ber and Ans-si Kla-pu-ri,
  []
 
 
-Underfull \hbox (badness 1038) in paragraph at lines 107--111
+Underfull \hbox (badness 1038) in paragraph at lines 105--109
 \OT1/ptm/m/n/10 ``Constant-q trans-form tool-box for mu-sic pro-
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--124
+[]\OT1/ptm/m/n/10 D. W. P. Ellis,  ``Alig-ning mi-di fi-les
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--124
+\OT1/ptm/m/n/10 to mu-sic au-dio, web re-sour-ce,''  2014,
+ []
+
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 496.
-Extra height:0.0pt when 686.11493pt
-(2)Left:686.11493pt Right:686.22986pt Output:686.11493pt
-(2)Left:686.22986pt Right:686.22986pt Output:686.22986pt
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 477.
+Extra height:0.0pt when 563.66492pt
+(2)Left:563.66492pt Right:562.32983pt Output:563.66492pt
 - LAST -
 Extra skip:0.0pt
-Left:686.22986pt
-Right:686.22986pt
-Output:686.22986pt
+Left:563.66492pt
+Right:562.32983pt
+Output:563.66492pt
  [9]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 496.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 477.
  (./aap_flauta_jpbraga.aux
 LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 496.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 496.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 477.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 477.
 Package rerunfilecheck Info: File `aap_flauta_jpbraga.out' has not changed.
-(rerunfilecheck)             Checksum: 403B016506119D1116EDC658DA037BBC;1286.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 496.
+(rerunfilecheck)             Checksum: CCA9C5787B6031E11C6E0E5F177C9604;1204.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 477.
  ) 
 Here is how much of TeX's memory you used:
- 8105 strings out of 493029
- 113236 string characters out of 6136234
- 228822 words of memory out of 5000000
- 11403 multiletter control sequences out of 15000+600000
+ 8109 strings out of 493029
+ 113302 string characters out of 6136234
+ 222874 words of memory out of 5000000
+ 11407 multiletter control sequences out of 15000+600000
  51628 words of font info for 95 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,9n,30p,1318b,384s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,9n,30p,1532b,458s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/share/texlive/texmf-
@@ -1082,10 +1091,10 @@ mf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/font
 s/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/tim
 es/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on aap_flauta_jpbraga.pdf (9 pages, 1270566 bytes).
+Output written on aap_flauta_jpbraga.pdf (9 pages, 1347076 bytes).
 PDF statistics:
- 346 PDF objects out of 1000 (max. 8388607)
- 297 compressed objects within 3 object streams
+ 347 PDF objects out of 1000 (max. 8388607)
+ 298 compressed objects within 3 object streams
  84 named destinations out of 1000 (max. 500000)
- 198 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 190 words of extra memory for PDF output out of 10000 (max. 10000000)
 

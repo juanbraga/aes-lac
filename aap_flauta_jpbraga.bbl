@@ -18,15 +18,15 @@ Barry Vercoe,
 
 \bibitem{arzt2008score}
 Andreas Arzt,
-\newblock {\em Score following with dynamic time warping: An automatic
-  page-turner},
-\newblock na, 2008.
+\newblock ``Score following with dynamic time warping: An automatic
+  page-turner,''
+\newblock 2008, na.
 
 \bibitem{prockup2013orchestral}
 Matthew Prockup, David Grunberg, Alex Hrybyk, and Youngmoo~E Kim,
 \newblock ``Orchestral performance companion: Using real-time audio to score
   alignment,''
-\newblock {\em IEEE MultiMedia}, vol. 20, no. 2, pp. 52--60, 2013.
+\newblock 2013, vol.~20, pp. 52--60, IEEE.
 
 \bibitem{montecchio2009discrete}
 Nicola Montecchio and Nicola Orio,
@@ -38,26 +38,13 @@ Nicola Montecchio and Nicola Orio,
 Christopher Raphael,
 \newblock ``Automatic segmentation of acoustic musical signals using hidden
   markov models,''
-\newblock {\em IEEE transactions on pattern analysis and machine intelligence},
-  vol. 21, no. 4, pp. 360--370, 1999.
+\newblock 1999, vol.~21, pp. 360--370, IEEE.
 
 \bibitem{orio2001score}
 Nicola Orio and Fran{\c{c}}ois D{\'e}chelle,
 \newblock ``Score following using spectral analysis and hidden markov models,''
 \newblock in {\em ICMC: International Computer Music Conference}, 2001, pp.
   1--1.
-
-\bibitem{sakoe1978dynamic}
-Hiroaki Sakoe and Seibi Chiba,
-\newblock ``Dynamic programming algorithm optimization for spoken word
-  recognition,''
-\newblock {\em IEEE transactions on acoustics, speech, and signal processing},
-  vol. 26, no. 1, pp. 43--49, 1978.
-
-\bibitem{muller2007information}
-Meinard M{\"u}ller,
-\newblock {\em Information retrieval for music and motion}, vol.~2,
-\newblock Springer, 2007.
 
 \bibitem{orio2001alignment}
 Nicola Orio and Diemo Schwarz,
@@ -93,15 +80,26 @@ Francisco~Jose Rodriguez-Serrano, Julio~Jose Carabias-Orti, Pedro Vera-Candeas,
 \newblock {\em ACM Transactions on Intelligent Systems and Technology (TIST)},
   vol. 8, no. 2, pp. 22, 2017.
 
+\bibitem{sakoe1978dynamic}
+Hiroaki Sakoe and Seibi Chiba,
+\newblock ``Dynamic programming algorithm optimization for spoken word
+  recognition,''
+\newblock 1978, vol.~26, pp. 43--49, IEEE.
+
+\bibitem{muller2007information}
+Meinard M{\"u}ller,
+\newblock ``Information retrieval for music and motion,''
+\newblock 2007, vol.~2, Springer.
+
 \bibitem{samuel2002study}
 Adler Samuel,
-\newblock ``The study of orchestration,'' 2002.
+\newblock ``The study of orchestration,''
+\newblock 2002, WW Norton and Company, Inc, New York, London.
 
 \bibitem{dick1975other}
 Robert Dick,
-\newblock {\em The other flute: a performance manual of contemporary
-  techniques},
-\newblock Oxford University Press, 1975.
+\newblock ``The other flute: a performance manual of contemporary techniques,''
+\newblock 1975, Oxford University Press.
 
 \bibitem{schorkhuber2010constant}
 Christian Sch{\"o}rkhuber and Anssi Klapuri,
@@ -112,12 +110,16 @@ Christian Sch{\"o}rkhuber and Anssi Klapuri,
 \bibitem{brown1991calculation}
 Judith~C Brown,
 \newblock ``Calculation of a constant q spectral transform,''
-\newblock {\em The Journal of the Acoustical Society of America}, vol. 89, no.
-  1, pp. 425--434, 1991.
+\newblock 1991, vol.~89, pp. 425--434, ASA.
 
 \bibitem{blom1955grove}
 Eric Blom and Denis Stevens,
-\newblock {\em Grove's dictionary of music and musicians},
-\newblock St. Martin's Press, 1955.
+\newblock ``Grove's dictionary of music and musicians,''
+\newblock 1955, St. Martin's Press.
+
+\bibitem{alignmidi}
+D.~W.~P. Ellis,
+\newblock ``Aligning midi files to music audio, web resource,''
+\newblock 2014, http://www.ee.columbia.edu/~dpwe/resources/.
 
 \end{thebibliography}

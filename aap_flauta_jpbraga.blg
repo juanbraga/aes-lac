@@ -3,44 +3,59 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: aap_flauta_jpbraga.aux
 The style file: aes.bst
 Database file #1: bib.bib
-You've used 20 entries,
+Warning--empty booktitle in arzt2008score
+Warning--empty booktitle in prockup2013orchestral
+Warning--can't use both volume and number fields in prockup2013orchestral
+Warning--empty booktitle in raphael1999automatic
+Warning--can't use both volume and number fields in raphael1999automatic
+Warning--empty booktitle in sakoe1978dynamic
+Warning--can't use both volume and number fields in sakoe1978dynamic
+Warning--empty booktitle in muller2007information
+Warning--empty booktitle in samuel2002study
+Warning--empty booktitle in dick1975other
+Warning--empty booktitle in brown1991calculation
+Warning--can't use both volume and number fields in brown1991calculation
+Warning--empty booktitle in blom1955grove
+Warning--empty booktitle in alignmidi
+You've used 21 entries,
             1855 wiz_defined-function locations,
-            582 strings with 6901 characters,
-and the built_in function-call counts, 4909 in all, are:
-= -- 461
-> -- 155
-< -- 9
-+ -- 61
-- -- 41
-* -- 322
-:= -- 708
-add.period$ -- 23
-call.type$ -- 20
-change.case$ -- 16
+            587 strings with 7020 characters,
+and the built_in function-call counts, 5687 in all, are:
+= -- 535
+> -- 159
+< -- 17
++ -- 63
+- -- 42
+* -- 357
+:= -- 767
+add.period$ -- 24
+call.type$ -- 21
+change.case$ -- 21
 chr.to.int$ -- 0
-cite$ -- 20
-duplicate$ -- 257
-empty$ -- 528
-format.name$ -- 41
-if$ -- 1161
+cite$ -- 35
+duplicate$ -- 322
+empty$ -- 622
+format.name$ -- 42
+if$ -- 1377
 int.to.chr$ -- 0
-int.to.str$ -- 20
-missing$ -- 23
-newline$ -- 102
-num.names$ -- 20
-pop$ -- 95
+int.to.str$ -- 21
+missing$ -- 21
+newline$ -- 108
+num.names$ -- 21
+pop$ -- 114
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 126
+skip$ -- 190
 stack$ -- 0
-substring$ -- 308
-swap$ -- 86
-text.length$ -- 9
+substring$ -- 332
+swap$ -- 127
+text.length$ -- 17
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 0
-while$ -- 55
-width$ -- 22
-write$ -- 219
+warning$ -- 14
+while$ -- 60
+width$ -- 23
+write$ -- 234
+(There were 14 warnings)
